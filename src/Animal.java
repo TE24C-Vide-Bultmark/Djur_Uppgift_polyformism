@@ -1,4 +1,4 @@
-public class Animal{
+public abstract class Animal{
     protected float weight;
     protected int energy;
     protected boolean isAlive;
@@ -17,7 +17,5 @@ public class Animal{
     public void run(int meter){
         energy -= meter*weight;
     }
-    public String sound(){
-        return "The animal is making noises";
-    }
+    public abstract String sound();
 }

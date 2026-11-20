@@ -11,6 +11,9 @@ public class App {
             IO.println(a.sound());
             if (a instanceof Dog t) {
                 t.track("bunny");
+                t.sit();
+                t.fetch();
+                t.come();
             }
             if (a instanceof Cat c) {
                 c.play("ball");
